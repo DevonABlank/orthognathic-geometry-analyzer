@@ -1,3 +1,16 @@
+"""
+jawproject.visualize
+
+Visualization utilities for drawing landmarks and metric overlays on images.
+
+What it does:
+- Draws all landmarks (optional)
+- Draws the measurement overlay:
+  - vertical reference line through subnasale
+  - dot at subnasale and chin
+  - text label showing the computed metric
+"""
+
 from __future__ import annotations
 
 from typing import List, Optional, Tuple

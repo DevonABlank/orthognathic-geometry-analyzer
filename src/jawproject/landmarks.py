@@ -1,3 +1,18 @@
+"""
+jawproject.landmarks
+
+Face landmark detection utilities using MediaPipe Tasks (FaceLandmarker).
+
+What it does:
+- Loads/ensures a FaceLandmarker model file exists locally
+- Runs MediaPipe's FaceLandmarker on an RGB image
+- Returns normalized (x, y) face mesh landmarks for the first detected face
+
+Notes:
+- On first run, the model may be downloaded into /assets (requires internet once).
+- After the model file exists locally, detection can run offline.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

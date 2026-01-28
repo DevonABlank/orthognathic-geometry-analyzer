@@ -1,3 +1,18 @@
+"""
+jawproject.measure
+
+Measurement and scoring logic for the Jaw Profile Prototype.
+
+What it does:
+- Selects two landmark points (subnasale + chin) using MediaPipe landmark indices
+- Defines a vertical reference line through subnasale (TVL-ish)
+- Computes signed horizontal pixel distance from the line to the chin point
+
+Notes:
+- MVP heuristic; sign can flip depending on whether the face is left- or right-facing.
+- Future work: orientation normalization + more robust cephalometric-style metrics.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

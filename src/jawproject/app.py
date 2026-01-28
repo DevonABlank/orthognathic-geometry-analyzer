@@ -1,3 +1,19 @@
+"""
+jawproject.app
+
+Streamlit web app entrypoint for the Jaw Profile Prototype.
+
+What it does:
+- Lets a user upload a face image (jpg/png)
+- Runs face landmark detection (MediaPipe Face Landmarker)
+- Computes a simple chin-to-vertical-line metric (MVP heuristic)
+- Visualizes the result by drawing a reference line + key points + score overlay
+
+Notes:
+- This is an engineering demo / prototype for geometry-based facial measurement.
+- Not a medical diagnostic tool.
+"""
+
 import streamlit as st
 import numpy as np
 import cv2
